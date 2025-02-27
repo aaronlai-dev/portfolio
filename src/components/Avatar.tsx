@@ -68,7 +68,7 @@ export default function Avatar() {
   };
 
   return (
-    <main className="hidden md:block fixed -translate-x-20 lg:-translate-x-0">
+    <main className="hidden md:block fixed md:-translate-x-35 lg:-translate-x-0">
       <Spline
         className='content-center'
         scene="https://prod.spline.design/m2RHEywOfBhsBJW5/scene.splinecode"

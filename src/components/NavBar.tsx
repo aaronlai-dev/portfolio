@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection, heroRef, projectsRef, 
         <Button variant="outline" className="hover:border-pri "><a href={resume} target="_blank" rel='noopener noreferrer'>My Resume</a> </Button>
         <Button variant="outline" className="hover:border-pri"><a href="https://github.com/aaronlai-dev" target="_blank" rel='noopener noreferrer'>GitHub</a></Button>
       </nav>
-      <nav className="fixed top-0 right-0 p-4 space-x-4 z-20">
+      <nav className="hidden md:block fixed top-0 right-0 p-4 space-x-4 z-20">
         <button onClick={() => scrollToSection(heroRef)} className="hover:text-pri">Home</button>
         <button onClick={() => scrollToSection(projectsRef)} className="hover:text-pri">Projects</button>
         <button onClick={() => scrollToSection(skillsRef)} className="hover:text-pri">Skills</button>

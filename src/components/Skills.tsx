@@ -68,28 +68,23 @@ export default function Skills() {
   ];
 
   return(
-    <section className="h-dvh w-dvw">
-      <div className="flex flex-row h-full">
-        <div className="md:basis-2/5"></div>
-        <div className="w-full md:basis-3/5 place-content-center justify-items-center md:pr-20 font-jaka font-semibold text-l text-center">
-          <div className="grid grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-12 mb-24 justify-items-center">
-            <div className="col-span-4 lg:col-span-1 lg:row-span-2 max-w-30 self-center p-2 rounded-xl bg-back-200">
-              Front-End
-            </div>
-            {front_end.map((image, index) => (
-              <SkillImage key={index} image={image} index={index} />
-            ))}
-          </div>
-          <div className="grid grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-12 justify-items-center">
-            <h2 className="col-span-4 lg:col-span-1  lg:row-span-2 max-w-30 self-center p-2 rounded-xl bg-back-200">
-              Back-End
-            </h2>
-            {back_end.map((image, index) => (
-              <SkillImage key={index} image={image} index={index} delayOffset={front_end.length} />
-            ))}
-          </div>
+    <div className="px-4 md:pr-10 font-jaka font-semibold text-l text-center">
+      <div className="grid grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-6 md:gap-x-12 mb-24 justify-items-center">
+        <div className="col-span-4 lg:col-span-1 lg:row-span-2 max-w-30 self-center p-2 rounded-xl bg-back-200">
+          Front-End
         </div>
+        {front_end.map((image, index) => (
+          <SkillImage key={index} image={image} index={index} />
+        ))}
       </div>
-    </section>
+      <div className="grid grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-6 md:gap-x-12 justify-items-center">
+        <h2 className="col-span-4 lg:col-span-1  lg:row-span-2 max-w-30 self-center p-2 rounded-xl bg-back-200">
+          Back-End
+        </h2>
+        {back_end.map((image, index) => (
+          <SkillImage key={index} image={image} index={index} delayOffset={front_end.length} />
+        ))}
+      </div>
+    </div>
   );
 }
