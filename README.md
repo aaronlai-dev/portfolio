@@ -1,4 +1,4 @@
-# Aaron Lai's Personal Portfolio
+# 💼 Aaron Lai's Personal Portfolio
 
 Live on: [www.aaron-lai.com](www.aaron-lai.com)
 
@@ -7,7 +7,7 @@ Hosted via Vercel.
 
 https://github.com/user-attachments/assets/01b49e68-c1f6-4f2b-80bc-1d18f9550292
 
-## Key Styling Frameworks + Documentation 
+## 🖌️ Key Styling Frameworks + Documentation 
 
 [TailwindCSS](https://tailwindcss.com/)
 [Shadcn](https://ui.shadcn.com/)
